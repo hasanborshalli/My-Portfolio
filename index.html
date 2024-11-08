@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasan - Portfolio</title>
+    <link rel="icon" href="assets/dp.jpeg" type="image/jpeg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        dark: "#0a0a0a",
+                        light: "#fcfbf7",
+                    },
+                },
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="bg-light dark:bg-dark text-dark dark:text-white min-h-screen flex flex-col font-['Inter'] transition-colors duration-300"></body>
+    <div class="absolute top-8 right-8 z-10">
+        <button id="themeToggle" class="p-2 rounded-lg bg-dark dark:bg-light text-light dark:text-dark w-10 h-10 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+        </button>
+    </div>
+
+    <main class="flex-grow flex flex-col">
+        <!-- Hero Section -->
+        <section class="flex items-center justify-center min-h-screen">
+            <div class="text-center max-w-4xl mx-auto px-4">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-2 tracking-tighter leading-none text-shadow-glow-subtle">
+                    Hasan <span class="font-garamond font-normal">Borshalli</span>
+                </h1>
+                <p class="text-xl md:text-2xl font-semibold mb-8">
+                    <span class="text-gray-600 dark:text-[#C9C9C9]">Web & </span>
+                    <span class="bg-gradient-to-r from-[#9C83FF] to-[#FF9051] text-transparent bg-clip-text">Mobile Developer</span>
+                </p>
+
+                <!-- Buttons -->
+                <div class="flex justify-center space-x-4 mb-12">
+                    <a href="https://github.com/hasanborshalli/" class="button button-filled flex items-center space-x-2">
+                        <span>GitHub</span>
+                        <i data-lucide="github" class="w-5 h-5"></i>
+                    </a>
+                    <a href="mailto:hasanborshalli@gmail.com" class="button button-outlined flex items-center space-x-2">
+                        <span>Contact Me</span>
+                        <i data-lucide="mail" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Add the chevron-down icon -->
+            <div class="chevron-down">
+                <i data-lucide="chevron-down" class="w-8 h-8"></i>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section py-20 bg-gray-100 dark:bg-gray-900">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center font-garamond">About Me</h2>
+                <div class="flex flex-col md:flex-row items-center md:items-start justify-center space-y-8 md:space-y-0 md:space-x-12">
+                    <div class="squircle bg-gray-300 dark:bg-gray-700 flex-shrink-0">
+                        <img src="PROFILE2.jpeg" alt="hasanborshalli" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="max-w-2xl text-center md:text-left">
+                        <p class="about-text font-space-mono">
+                            Hi there! 👋 I'm a Web Developer from Palestine, currently based in Lebanon, with over a year of experience in feature development and system enhancement. Skilled in both web and mobile development, I’m focused on creating user-friendly, high-performance applications that merge design, functionality, and security.
+                        </p>
+                        <br>
+                        <p class="about-text font-space-mono">
+                            I'm also passionate about Penetration Testing, Reading Science Fiction and Gaming. When I'm not coding, you'll find me tinkering with one of them.
+                        </p>
+                        <br>
+                        <p class="about-text interests-container">
+                            <span><span class="font-bold">Interests: </span> Penetration Testing, Reading Science Fiction and Gaming.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section py-16">
+            <div class="container mx-auto px-8 sm:px-16">
+                <h2 class="text-3xl font-bold mb-16 text-center font-space-mono">What I fiddle with....</h2>
+                <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-12 place-items-center">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/html5.svg" alt="HTML5" class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/css3.svg" alt="CSS3" class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/javascript.svg" alt="JavaScript" class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/typescript.svg" alt="TypeScript" class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/php.svg" alt="PHP" class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/laravel.svg" alt="Laravel" class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/nestjs.svg" alt="NestJS" class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/react.svg" alt="ReactJS" class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/angular.svg" alt="Angular" class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/flutter.svg" alt="Flutter" class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/dart.svg" alt="Dart" class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/mysql.svg" alt="SQL" class="tech-icon">
+                    </div>
+            </div>
+        </section>
+
+        <!-- Navigation Links Section -->
+        <section id="links" class="section py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-16 text-center font-space-mono">Connect with me</h2>
+                <nav class="nav-container">
+                    <a target="_blank" href="https://github.com/hasanborshalli" class="nav-link text-xl md:text-2xl text-gray-600 dark:text-gray-400 font-bold">
+                        <i data-lucide="github" class="w-6 h-6"></i>
+                        Github
+                    </a>
+                    <a target="_blank" href="resume.pdf" download class="nav-link text-xl md:text-2xl text-gray-600 dark:text-gray-400 font-bold">
+                        <i data-lucide="file-text" class="w-6 h-6"></i>
+                        Resume
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/hasanborshalli" class="nav-link text-xl md:text-2xl text-gray-600 dark:text-gray-400 font-bold">
+                        <i data-lucide="linkedin" class="w-6 h-6"></i>
+                        LinkedIn
+                    </a>
+                    <a target="_blank" href="https://wa.me/+96181744010" class="nav-link text-xl md:text-2xl text-gray-600 dark:text-gray-400 font-bold">
+                        <i data-lucide="phone" class="w-6 h-6"></i>
+                        WhatsApp
+                    </a>
+                    
+                    
+                    <a target="_blank" href="mailto:hasanborshalli@gmail.com" class="nav-link text-xl md:text-2xl text-gray-600 dark:text-gray-400 font-bold">
+                        <i data-lucide="mail" class="w-6 h-6"></i>
+                        Contact
+                    </a>
+                </nav>
+            </div>
+        </section>
+       
+        <!-- Projects Section -->
+        <section id="projects" class="section py-20 bg-gray-100 dark:bg-gray-900">
+            <div class="container mx-auto px-4 max-w-6xl projects-container">
+                <h2 class="text-3xl font-bold mb-12 text-center font-space-mono">Projects</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project tiles will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="w-full py-4 border-t border-gray-300 dark:border-gray-700">
+        <p class="text-center font-space-mono text-sm uppercase cursor-pointer footer-text" onclick="rickRoll()">
+            CLICK HERE TO GET OUT OF THE MATRIX
+        </p>
+    </footer>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        dark: "#0a0a0a",
+                        light: "#fcfbf7",
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-light dark:bg-dark text-dark dark:text-white min-h-screen flex flex-col font-['Inter'] transition-colors duration-300">
+    <script>
+        lucide.createIcons();
+        
+        // Scroll reveal effect
+        function revealSections() {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (sectionTop < windowHeight * 0.75) {
+                    section.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', revealSections);
+        window.addEventListener('load', revealSections);
+
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+
+        // Function to set the theme
+        function setTheme(isDark) {
+            if (isDark) {
+                html.classList.add('dark');
+            } else {
+                html.classList.remove('dark');
+            }
+            updateIcon(isDark);
+            localStorage.setItem('darkMode', isDark);
+        }
+
+        // Function to update the icon
+        function updateIcon(isDark) {
+            themeToggle.innerHTML = isDark
+                ? '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>'
+                : '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>';
+        }
+
+        // Function to get system preference
+        function getSystemPreference() {
+            return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        }
+
+        // Function to set initial theme
+        function setInitialTheme() {
+            const savedTheme = localStorage.getItem('darkMode');
+            if (savedTheme !== null) {
+                setTheme(JSON.parse(savedTheme));
+            } else {
+                setTheme(getSystemPreference());
+            }
+        }
+
+        // Toggle theme when button is clicked
+        themeToggle.addEventListener('click', () => {
+            const isDark = !html.classList.contains('dark');
+            setTheme(isDark);
+        });
+
+        // Listen for system preference changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            if (localStorage.getItem('darkMode') === null) {
+                setTheme(e.matches);
+            }
+        });
+
+        // Set initial theme
+        setInitialTheme();
+
+        function rickRoll() {
+            window.open("https://www.youtube.com/watch?v=xvFZjo5PgG0", "_blank");
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const rdkElements = document.querySelectorAll('.rdk-hover');
+            rdkElements.forEach(element => {
+                element.addEventListener('click', function() {
+                    if (this.textContent === 'RDK-B') {
+                        window.open('https://wiki.rdkcentral.com/display/RDK/RDK-Broadband', '_blank');
+                    } else if (this.textContent === 'RDK') {
+                        window.open('https://en.wikipedia.org/wiki/Reference_Design_Kit', '_blank');
+                    }
+                });
+            });
+        });
+
+        // Project data
+        const projects = [
+            {
+                title: "The Muslim Scout of Lebanon",
+                description: "Web Management System - Developed a responsive web management system for “The Muslim Scout of Lebanon,” enabling efficient activity and volunteer management according to schedules. The system improved internal communication across different roles. Designed and implemented the frontend and backend from scratch.",
+                url: "https://github.com/hasanborshalli/Muslim-Scout",
+                liveUrl:'https://github.com/hasanborshalli/Muslim-Scout',
+                image: "https://opengraph.githubassets.com/1/hasanborshalli/Muslim-Scout"
+            },
+            {
+                title: "Oro Library",
+                description: " E-commerce Website – Created a responsive e-commerce platform allowing users to browse, add products to a cart, and complete purchases smoothly. This system provided an affordable online solution, boosting the client’s sales by 30% within the first month.",
+                url: "https://github.com/hasanborshalli/oro-library",
+                liveUrl:'https://www.orolibrary.com',
+                image: "https://opengraph.githubassets.com/1/hasanborshalli/oro-library"
+            },
+            {
+                title: "Lab Master",
+                description: "Portfolio - One-page portfolio website for Lab Master, a company specializing in laboratory equipment. Showcases products and services professionally, enhancing Lab Master’s online presence with modern web technologies. ",
+                url: "https://github.com/hasanborshalli/LabMaster",
+                liveUrl:'https://www.labmasterlb.com',
+                image: "https://opengraph.githubassets.com/1/hasanborshalli/LabMaster"
+            },
+            {
+                title: "Brndng.",
+                description: "Portfolio - Responsive, visually appealing portfolio for a new creative agency specializing in custom websites, branding, and graphic design for businesses. Increased web traffic and sales in the first month by establishing a strong online presence. The company sales increased directly and noticed many website visits in the first month ",
+                url: "https://github.com/hasanborshalli/Brndng-Portfolio",
+                liveUrl:'https://www.brndnglb.com',
+                image: "https://opengraph.githubassets.com/1/hasanborshalli/Brndng-Portfolio"
+            },{
+                title: "My Portfolio",
+                description: "Personal Portfolio – A showcase of my web development skills, highlighting projects in web development. Features a sleek, responsive design with dark/light mode, a dynamic hero section, skill icons, and project details.",
+                url: "https://github.com/hasanborshalli/My-Portfolio",
+                liveUrl:'',
+                image: "https://opengraph.githubassets.com/1/hasanborshalli/My-Portfolio"
+            }
+            
+        ];
+
+        // Function to create project tiles
+        function createProjectTiles() {
+            const projectsContainer = document.querySelector('#projects .grid');
+            projects.forEach(project => {
+                const tile = document.createElement('div');
+                tile.className = 'project-tile';
+                tile.innerHTML = `
+                    <div class="project-thumbnail mb-4">
+                        <img src="${project.image}" alt="${project.title}" class="w-full h-full object-cover">
+                        <div class="redirect-icon">
+                            <i data-lucide="external-link"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">${project.title}</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">${project.description}</p>
+                    <a href="${project.liveUrl}" target="_blank" class="visit-website bg-blue-500 text-white py-2 px-4 rounded inline-flex items-center mb-4">
+    Visit Website
+    <i data-lucide="external-link" class="ml-2"></i>
+</a><br>
+                    <a href="${project.url}" target="_blank" class="read-more">
+                        find more   
+                        <i data-lucide="github"></i>
+                    </a>
+                    <div class="repo-actions">
+                        <a href="${project.url}/stargazers" target="_blank" class="repo-action">
+                            <i data-lucide="star"></i>
+                            Star
+                        </a>
+                        <a href="${project.url}/fork" target="_blank" class="repo-action">
+                            <i data-lucide="git-fork"></i>
+                            Fork
+                        </a>
+                    </div>
+                `;
+                const thumbnail = tile.querySelector('.project-thumbnail');
+                thumbnail.addEventListener('click', () => window.open(project.url, '_blank'));
+                projectsContainer.appendChild(tile);
+            });
+            lucide.createIcons();
+        }
+
+        // Call the function to create project tiles
+        createProjectTiles();
+        
+    </script>
+</body>
+</html>
